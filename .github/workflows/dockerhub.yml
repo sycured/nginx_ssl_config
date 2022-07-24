@@ -4,6 +4,7 @@ on:
     branches: [main]
   schedule:
     - cron: "0 0 */7 * *"
+  workflow_dispatch:
 jobs:
   docker:
     runs-on: ubuntu-latest
