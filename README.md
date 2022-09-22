@@ -8,7 +8,7 @@ Rated A+ at https://www.ssllabs.com/ssltest/
 
 Docker Hub: https://hub.docker.com/r/sycured/ngx
 
-If `/etc/nginx/dhparam.pem` doens't exist, it'll generate it. This generation can be tuned using `DHPARAM_SIZE` environment variable, by default it's 4096.
+If `/etc/nginx/dhparam.pem` doens't exist, it'll be generated using `DHPARAM_SIZE` environment variable (default: 4096).
 
 ## WARNING
 
