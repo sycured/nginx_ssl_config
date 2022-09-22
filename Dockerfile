@@ -1,3 +1,5 @@
 FROM nginx:stable
+ENV DHPARAM_SIZE=4096
 LABEL org.opencontainers.image.source="https://github.com/sycured/nginx_ssl_config"
-ADD ssl.conf /etc/nginx/conf.d/ssl.conf
+ADD *.sh /docker-entrypoint.d/
+ADD *.conf /etc/nginx/conf.d/
